@@ -17,54 +17,157 @@
 <body>
     <div class="main-container">
         <header>
-            <img src="images/logo/Booki.png" alt="Logo_Booki">
-            <input type="button" value="Hébergements" name="Hebergements" id="hebergements">
-            <input type="button" value="Activités" name="Activites" id="activites">
+            <img src="images/logo/Booki.png" alt="Logo_Booki" id="logo_booki">
+                <div class="button_head">
+                <a href="#hebergements"><button>Hébergements</button></a>
+                <a href="#activites"><button>Activités</button></a>
+                </div>
         </header>
-        <section>
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p>En plein centre-ville ou en pleine nature</p>
-            <input type="search" name="Rechercher" placeholder="Marseille, France" id="recherche">
-            <h1>Filtres</h1>
-            <input type="button" value="Economique" id="economique">
-            <input type="button" value="Familial" id="familial">
-            <input type="button" value="Romantique" id="romantique">
-            <input type="button" value="Nos pépites" id="nos_pepites">
+        <section class="info_group">
+            <form action="#" method="">
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre-ville ou en pleine nature</p>
+                <input type="search" name="Rechercher" placeholder="Marseille, France" id="recherche">
+            </form>
+                <div class="filter_bar">
+                    <h1>Filtres</h1>
+                    <input type="button" value="Economique" id="economique">
+                    <input type="button" value="Familial" id="familial">
+                    <input type="button" value="Romantique" id="romantique">
+                    <input type="button" value="Nos pépites" id="nos_pepites">
+                </div>
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </section>
 
         <main>
-            <div class="hebergements-and-populaires">
+            <div class="hebergements-and-populaires" id="hebergements">
 
-                <section class="hebergements-marseille">
+                <section class="hebergements-main">
                     <div class="populaires-title">
                         <h2 class="section-title">Hébergements à Marseille</h2>
                     </div>
 
-                    <div class="populaire-cards">
-                        <article class="card">
-                            <div class="card-marseille">
+                    <div class="hebergement-cards">
+
+                        <article class="card hebergement">
+                            <div class="card-main">
                                 <img src="images/hebergements/annie-spratt.jpg" alt="image annie spratt">
-                            </div>
-                            <div class="card-content">
-                                <div class="card-txt">
+
+                                <div class="card-content-main">
                                     <h3 class="card-title">Hôtel de la Mer</h3>
                                     <p class="card-subtitle">Nuit à partir de 46<span class="euro">€</span></p>
-                                </div>
-                                <div class="card-rating">
-                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                    <span class="sr-only">Note de 4 sur 5</span>
+                                    <div class="card-rating">
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
                                 </div>
                             </div>
                         </article>
-                        <h2 class="section">Afficher Plus</h2>
-                    </div>
 
+                        <article class="card hebergement">
+                            <div class="card-main">
+                                <img src="images/hebergements/annie-spratt.jpg" alt="image annie spratt">
+
+                                <div class="card-content-main">
+                                    <h3 class="card-title">Hôtel de la Mer</h3>
+                                    <p class="card-subtitle">Nuit à partir de 46<span class="euro">€</span></p>
+                                    <div class="card-rating">
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card hebergement">
+                            <div class="card-main">
+                                <img src="images/hebergements/annie-spratt.jpg" alt="image annie spratt">
+
+                                <div class="card-content-main">
+                                    <h3 class="card-title">Hôtel de la Mer</h3>
+                                    <p class="card-subtitle">Nuit à partir de 46<span class="euro">€</span></p>
+                                    <div class="card-rating">
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card hebergement">
+                            <div class="card-main">
+                                <img src="images/hebergements/annie-spratt.jpg" alt="image annie spratt">
+
+                                <div class="card-content-main">
+                                    <h3 class="card-title">Hôtel de la Mer</h3>
+                                    <p class="card-subtitle">Nuit à partir de 46<span class="euro">€</span></p>
+                                    <div class="card-rating">
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card hebergement">
+                            <div class="card-main">
+                                <img src="images/hebergements/annie-spratt.jpg" alt="image annie spratt">
+
+                                <div class="card-content-main">
+                                    <h3 class="card-title">Hôtel de la Mer</h3>
+                                    <p class="card-subtitle">Nuit à partir de 46<span class="euro">€</span></p>
+                                    <div class="card-rating">
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+
+                        <article class="card hebergement">
+                            <div class="card-main">
+                                <img src="images/hebergements/annie-spratt.jpg" alt="image annie spratt">
+
+                                <div class="card-content-main">
+                                    <h3 class="card-title">Hôtel de la Mer</h3>
+                                    <p class="card-subtitle">Nuit à partir de 46<span class="euro">€</span></p>
+                                    <div class="card-rating">
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <h3 class="card-subtitle">Afficher plus</h3>
                 </section>
+
+
                 <section class="populaires">
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
@@ -129,12 +232,29 @@
                 </section>
             </div>
 
-            <section class="activites">
+            <section class="activites" id="activites">
                 <h2 class="section-title">Activités à Marseille</h2>
-                <article class="card-activites">
+                <div class="container_activites">
+                    <article class="card-activites">
                         <img src="images/activites/florian-wehde.jpg" alt="image activite">
                         <h3 class="card-subtitle">Notre-Dame-De-La-Garde</h3>
-                </article>
+                    </article>
+
+                    <article class="card-activites">
+                        <img src="images/activites/florian-wehde.jpg" alt="image activite">
+                        <h3 class="card-subtitle">Notre-Dame-De-La-Garde</h3>
+                    </article>
+
+                    <article class="card-activites">
+                        <img src="images/activites/florian-wehde.jpg" alt="image activite">
+                        <h3 class="card-subtitle">Notre-Dame-De-La-Garde</h3>
+                    </article>
+
+                    <article class="card-activites">
+                        <img src="images/activites/florian-wehde.jpg" alt="image activite">
+                        <h3 class="card-subtitle">Notre-Dame-De-La-Garde</h3>
+                    </article>
+                </div>
             </section>
         </main>
         <footer class="footer">
