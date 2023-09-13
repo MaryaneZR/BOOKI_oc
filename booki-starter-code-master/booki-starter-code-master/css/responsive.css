@@ -1,0 +1,69 @@
+/* ***** Media queries ***********/
+
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+
+    .main-container {
+        margin-right: 30px;
+    }
+
+    .hebergements-and-populaires {
+        flex-direction: column;
+    }
+
+    .populaires {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .populaires-cards {
+        padding: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* Trois colonnes de largeur égale */
+        gap: 10px;
+        /* Espacement entre les cartes */
+    }
+
+    .populaires-cards .card .card-main {
+        width: 30%;
+    }
+
+    .populaires-cards .card-title {
+        font-size: 14px;
+    }
+
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
+    }
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hebergement-cards .hebergements-and-populaires .main-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .populaires-cards .card .card-main {
+        width: 30%;
+    }
+
+    .populaires-cards .card-title {
+        font-size: 14px;
+    }
+
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
+    }
+
+
+}
