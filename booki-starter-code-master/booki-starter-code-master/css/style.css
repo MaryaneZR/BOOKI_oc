@@ -91,10 +91,13 @@ body {
 }
 
 .main-container {
-    width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
+    padding: 50px;
     box-sizing: border-box;
+}
+
+.logements {
+    display: flex;
 }
 
 
@@ -150,6 +153,7 @@ header button {
 .filter_bar {
     display: flex;
     align-items: baseline;
+    flex-wrap: wrap;
 }
 
 .filter_bar>* {
@@ -218,10 +222,6 @@ header button {
     margin: 0px;
 }
 
-.logements {
-    display: inline-flex;
-}
-
 /****** Hebergements And Populaires ***********/
 
 .hebergement-cards {
@@ -231,23 +231,37 @@ header button {
     gap: 20px;
 }
 
-.hebergements-and-populaires {
+.hebergements-main .populaires {
     display: flex;
-    min-width: fit-content;
+    justify-content: space-between;
+    margin: 0.875rem;
+    padding: 1.875rem;
+    gap: 30px;
 }
 
 .hebergements-and-populaires section {
+    display: flex;
+    flex-direction: column;
     background-color: var(--main-bg-color);
+    min-width: fit-content;
     border-radius: 20px;
-    margin-right: 30px;
+}
+
+.hebergements-and-populaires{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 /******************CARDS*******************/
 
 .card_hebergement img {
-    width: 240px;
-    height: 170px;
-    border-radius: 1.25rem 1.25rem 0rem 0rem;
+    width: 97%;
+    height: 124px;
+    padding: 3px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    object-fit: cover;
 }
 
 .card_hebergement {
@@ -256,17 +270,13 @@ header button {
     display: flex;
     flex-direction: column;
     padding: 10px;
+    max-inline-size: calc(100% * (250px / 190px));
 }
 
 /****** Populaires ***********/
 
-.populaires section {
-
-}
-
 .populaires-title {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -275,6 +285,7 @@ header button {
     margin-top: 33px;
     justify-content: space-around;
     min-width: 270px;
+    max-width: 335px;
 }
 
 .populaires-cards img {
@@ -285,17 +296,16 @@ header button {
 }
 
 .populaires-cards .card-content {
-    width: 67%;
-    padding-left: 15px;
+    padding-left: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.populaires-cards .card-title {
+/* .populaires-cards .card-title {
     margin-top: 10px;
     margin-bottom: 4px;
-}
+} */
 
 .section-title {
     margin: 0;
@@ -321,7 +331,6 @@ header button {
     font-size: 16px;
 }
 
-
 .euro {
     font-weight: 700;
 }
@@ -337,32 +346,34 @@ header button {
 
 /************Activités***************/
 
-
 .container_activites {
     display: flex;
     gap: 30px;
-    margin-top: 30px;
-    max-height: 380px;
-    margin-bottom: 50px;
-    margin-right: 30px;
+}
+
+.container_activites .card-activites {
+    display: flex;
+    box-shadow: 6px 9px 17px -5px rgba(0, 0, 0, 0.41);
+    max-width: 23%;
 }
 
 .card-activites img {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    height: 390px;
     width: 100%;
-    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .card-activites {
+    flex-direction: column;
     border-radius: 20px;
-    box-shadow: 6px 9px 17px -5px rgba(0, 0, 0, 0.41);
-    min-width: 25%;
 }
 
 .card-activites h3 {
     justify-self: center;
-    padding: 20px;
+    padding: 10px;
+    flex-wrap: wrap;
 }
 
 /***********Footer*****************/
