@@ -1,7 +1,14 @@
 /* ***** Media queries ***********/
 
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    body {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 990px;
+    }
 
     .main-container {
         margin-right: 30px;
@@ -9,6 +16,9 @@
 
     .hebergements-and-populaires {
         flex-direction: column;
+    }
+    .hebergements-and-populaires section {
+        width: 100%;
     }
 
     .populaires {
@@ -47,23 +57,23 @@
 @media (max-width: 768px) {
 
     header>* {
-        justify-content: center;
+        display: block;
     }
 
-    .header {
+    .button_head button {
         display: block !important;
-        justify-self: center;
+        width: 100%;
+
     }
 
     body {
-        width: 100%;
-        margin-left: 50px;
-        min-width: 320px;
+        min-width: 400px;
+
     }
 
     .main-container {
         box-sizing: border-box;
-        margin: 10px;
+        margin: 20px;
     }
 
     .populaires-cards {
@@ -113,6 +123,10 @@
     .hebergement-cards {
         display: flex !important;
         flex-direction: column;
+    }
+
+    .hebergements-and-populaires section{
+        background-color: white !important;
     }
 
     .filter_bar button {
@@ -166,6 +180,15 @@ body {
 
 .logements {
     display: flex;
+    align-items: baseline;
+}
+
+.logements i {
+    margin-right: 10px;
+    justify-self: center;
+    border: 2px solid #F2F2F2;
+    border-radius: 50%;
+    padding: 4px 11px 7px 10px;
 }
 
 
@@ -196,6 +219,7 @@ body {
     color: rgb(18, 18, 18);
     padding: 39px 50px 0px 39px;
     border-top: 4px solid transparent;
+    margin-right: -43px;
 }
 
 .button_head button:hover {
@@ -246,10 +270,6 @@ header button {
     background-color: #DEEBFF;
 }
 
-.logements i {
-    padding-left: 10px;
-    padding-right: 5px;
-}
 
 
 /**********SEARCHBAR****************/
@@ -316,7 +336,7 @@ header button {
     flex-direction: column;
     background-color: var(--main-bg-color);
     border-radius: 20px;
-    padding: 30px;
+    padding: 25px 30px 20px 25px;
 
 }
 
@@ -325,7 +345,7 @@ header button {
     max-width: fit-content;
     justify-content: space-between;
     gap: 40px;
-    margin: 20px 0px 40px 0px;
+    margin: 18px 0px 40px 0px;
 }
 
 .populaires-title {
@@ -338,6 +358,10 @@ header button {
     padding-top: 5px;
 }
 
+#afficher_plus {
+    margin-top: 60px;
+
+}
 /******************CARDS*******************/
 
 .card_hebergement img {
@@ -500,7 +524,7 @@ header button {
     display: block;
     background-color: #F2F2F2;
     margin: 60px 0px 0px 0px;
-    padding: 20px 20px 80px 20px;
+    padding: 20px 20px 20px 20px;
     gap: 30px;
 }
 
@@ -508,7 +532,7 @@ header button {
     display: inline-flex;
     flex-direction: column;
     margin-right: 200px;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 }
 
 .footer p {
