@@ -1,4 +1,3 @@
-
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
@@ -18,12 +17,6 @@
 body {
     display: flex;
     justify-content: center;
-}
-
-.main-container {
-    max-width: 1225px;
-    box-sizing: border-box;
-    margin: 0px 0px 0px 50px;
 }
 
 .logements {
@@ -67,7 +60,7 @@ body {
     color: rgb(18, 18, 18);
     padding: 39px 50px 0px 39px;
     border-top: 4px solid transparent;
-    margin-right: -43px;
+    margin-right: 0px;
 }
 
 .button_head button:hover {
@@ -118,6 +111,9 @@ header button {
     background-color: #DEEBFF;
 }
 
+#responsive{
+    display: none;
+}
 
 
 /**********SEARCHBAR****************/
@@ -131,7 +127,7 @@ header button {
 .search_bar i {
     background-color: #F2F2F2;
     border-radius: 15px 0px 0px 15px;
-    padding: 10px;
+    padding: 20px;
     margin: 0px;
     align-self: self-end;
 }
@@ -140,11 +136,11 @@ header button {
     background-color: #0065FC;
     color: white;
     font-weight: 600;
-    padding: 10px;
+    padding: 13px;
     border-radius: 0px 15px 15px 0px;
     border: none;
-    margin: 0px;
-    height: 36px;
+    margin: -6px;
+    height: 56px;
 }
 
 .search_bar button:hover {
@@ -152,7 +148,7 @@ header button {
 }
 
 .search_bar input {
-    padding: 8px;
+    padding: 26px;
     font-weight: 600;
     border-top: 2px solid #F2F2F2;
     border-bottom: 2px solid #F2F2F2;
@@ -179,13 +175,15 @@ header button {
     gap: 30px;
 }
 
+.hebergements-main {
+    background-color: var(--main-bg-color);
+    border-radius: 15px;
+    padding: 25px 30px 20px 25px;
+}
+
 .hebergements-and-populaires section {
     display: flex;
     flex-direction: column;
-    background-color: var(--main-bg-color);
-    border-radius: 20px;
-    padding: 25px 30px 20px 25px;
-
 }
 
 .hebergements-and-populaires {
@@ -210,6 +208,7 @@ header button {
     margin-top: 60px;
 
 }
+
 /******************CARDS*******************/
 
 .card_hebergement img {
@@ -249,6 +248,12 @@ header button {
 
 /****** Populaires ***********/
 
+.populaires{
+    background-color: var(--main-bg-color);
+    border-radius: 15px;
+    padding: 25px 30px 20px 25px;
+}
+
 .populaires-title {
     display: flex;
     align-items: center;
@@ -257,10 +262,8 @@ header button {
 .populaires-cards .card {
     display: flex;
     margin-top: 33px;
-    justify-content: space-around;
     min-width: 270px;
     max-width: 335px;
-    padding: 8px;
 }
 
 .populaires-cards img {
@@ -321,7 +324,7 @@ header button {
 
 /************Activités***************/
 .activites {
-    min-width: fit-content;
+    width: inherit;
 }
 
 .container_activites {
@@ -332,12 +335,11 @@ header button {
 .container_activites .card-activites {
     display: flex;
     box-shadow: 6px 9px 17px -5px rgba(0, 0, 0, 0.41);
-    max-width: 23%;
 }
 
 .card-activites img {
-    max-height: 255px;
-    height: 390px;
+    max-height: 330px;
+    height: inherit;
     width: 100%;
     object-fit: cover;
     border-top-left-radius: 15px;
@@ -347,12 +349,12 @@ header button {
 .card-activites {
     flex-direction: column;
     border-radius: 20px;
+    width: 18rem;
+    height: 25rem;
 }
 
 .card-activites h3 {
-    justify-self: center;
-    padding: 10px;
-    flex-wrap: wrap;
+    padding: 14px;
 }
 
 .card-content>* {
@@ -366,15 +368,14 @@ header button {
 
 /***********Footer*****************/
 
-/* utiliser des fraction unit pour diviser en 3 parties = */
 
 .footer {
     display: flex;
     background-color: #F2F2F2;
     margin: 60px 0px 0px 0px;
     padding: 20px 20px 20px 20px;
-    gap: 140px;
-    align-items: flex-start; 
+    gap: 220px;
+    align-items: flex-start;
 }
 
 .footer-txt {

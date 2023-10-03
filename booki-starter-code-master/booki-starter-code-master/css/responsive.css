@@ -4,27 +4,20 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
     body {
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    min-width: 990px;
+        display: block;
     }
 
     .main-container {
-        margin-right: 30px;
+        min-width: 930px;
     }
 
     .hebergements-and-populaires {
         flex-direction: column;
     }
-    .hebergements-and-populaires section {
-        width: 100%;
-    }
 
     .populaires {
         display: flex;
         flex-direction: column;
-        width: 100%;
         margin-top: 50px;
     }
 
@@ -51,6 +44,19 @@
         max-height: 300px;
     }
 
+    .card-activites img {
+        max-height: 220px;
+    }
+
+    .card-activites h3 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer {
+        gap: 150px;
+    }
+
 
 
 }
@@ -58,51 +64,38 @@
 /* Small devices (phones, less than 768px) */
 @media (max-width: 768px) {
 
-.header {
-    text-align: center;
-    padding: 20px;
-}
-
-/* Style des boutons */
-.button_head {
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.button_head a {
-    text-decoration: none;
-}
-
-.button_head button {
-    border: none;
-    cursor: pointer;
-    transition: border-bottom 0.2s;
-}
-
-.button_head button:hover {
-    border-bottom: 2px solid #0074d9;
-}
-
-
     body {
-        min-width: 400px;
-
-    }
-
-    .main-container {
-        box-sizing: border-box;
-        margin: 20px;
-    }
-
-    .populaires-cards {
         display: flex;
-        flex-direction: column;
+        min-width: 420px;
     }
 
-    .populaires-cards .card .card-main {
-        width: 30%;
+    .header {
+        text-align: center;
+        display: block;
+    }
+
+    .info_group {
+        margin-left: 10vW;
+    }
+
+    /* Style des boutons */
+
+    .button_head {
+        justify-content: center;
+    }
+
+    .button_head a {
+        text-decoration: none;
+    }
+
+    .button_head button {
+        border: none;
+        cursor: pointer;
+    }
+
+    .button_head button:hover {
+        border-bottom: 2px solid #0074d9;
+        border-width: 100%;
     }
 
     .populaires-cards .card-title {
@@ -115,29 +108,38 @@
 
     .hebergements-and-populaires {
         flex-direction: column-reverse;
-        gap: 30px;
-        margin: 30px 5px 30px 5px;
-        width: 90%;
+        min-width: 90%;
+    }
+
+    .populaires {
+        width: 100%;
+        background-color: var(#F2F2F2);
+        border-radius: 0px;
+    }
+
+    .hebergements-main {
+        background-color: transparent;
     }
 
     .container_activites {
         flex-direction: column;
-        margin: 30px 5px 30px 5px;
-        gap: 0px;
+        margin: 30px -8px 16px 27px;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .section-title {
+        margin-left: 30px;
     }
 
     .card-activites {
-        height: 200px;
-        margin: 25px;
-        padding: 10px;
         min-width: 90%;
-        justify-content: center;
         justify-self: center;
+        max-height: 20rem;
     }
 
     .card-activites img {
-        height: inherit !important;
-        width: inherit !important;
+        max-height: 250px;
     }
 
     .hebergement-cards {
@@ -145,8 +147,8 @@
         flex-direction: column;
     }
 
-    .hebergements-and-populaires section{
-        background-color: white !important;
+    .populaires-cards {
+        padding-left: 20px;
     }
 
     .filter_bar button {
@@ -158,20 +160,42 @@
         display: block !important;
     }
 
+    #responsive {
+        display: block;
+    }
+    .search_bar {
+        margin-left: 2rem;
+    }
+    .search_bar i {
+        padding: 18px;
+    }
+
+    .search_bar input {
+        padding: 24px;
+    }
+
+    .search_bar #responsive {
+        background-color: #0065FC;
+        color: white;
+        font-weight: 600;
+        padding: 20px;
+        border-radius: 15px 15px 15px 15px;
+        border: none;
+        margin: -27px;
+        height: 13px;
+        box-shadow: 0px 4px 9px -4px #000000;
+    }
+
     .search_bar button {
-            background-color: #0065FC;
-            color: white;
-            font-weight: 600;
-            padding: 10px;
-            border-radius: 0px 15px 15px 0px;
-            border: none;
-            margin: 0px;
-            height: 36px;
+        background-color: transparent;
+    }
+
+    #text-input {
+        display: none;
     }
 
     .footer {
         display: block !important;
+        width: 100%;
     }
-
-
 }
