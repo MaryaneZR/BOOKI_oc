@@ -1,4 +1,11 @@
 /****** General ***********/
+@media screen and (min-width: 1024px) and (max-width: 1300px){
+    .main-container {
+        min-width: 1010px;
+        margin: 0px 20px;
+    }
+}
+
 * {
     font-family: 'Raleway', sans-serif;
     margin: 0px;
@@ -49,28 +56,32 @@ body {
     margin-top: 25px;
 }
 
-.button_head {
+.button_head_div {
     display: flex;
     justify-content: flex-end;
 }
 
-.button_head button {
+.button_head {
     border: none;
     background-color: white;
     color: rgb(18, 18, 18);
     padding: 39px 50px 0px 39px;
     border-top: 4px solid transparent;
-    margin-right: 0px;
+    text-decoration: none;
 }
 
-.button_head button:hover {
+.button_head:hover {
     color: var(--main-color);
-    border-top: #0065FC 4px solid;
+    border-top: #0065FC 2px solid;
     cursor: pointer;
 }
 
 header button {
     color: #0065FC;
+}
+
+.fa-location-dot {
+color: #161717;
 }
 
 /********INFO_GROUP *************/
@@ -262,7 +273,7 @@ header button {
 .populaires-cards .card {
     display: flex;
     margin-top: 33px;
-    min-width: 270px;
+    min-width: 240px;
     max-width: 335px;
 }
 
