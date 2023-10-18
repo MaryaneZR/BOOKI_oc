@@ -62,7 +62,6 @@ body {
 }
 
 .button_head {
-    border: none;
     background-color: white;
     color: rgb(18, 18, 18);
     padding: 39px 50px 0px 39px;
@@ -273,8 +272,8 @@ color: #161717;
 .populaires-cards .card {
     display: flex;
     margin-top: 33px;
-    min-width: 240px;
-    max-width: 335px;
+    min-width: 230px;
+    max-width: 370px;
 }
 
 .populaires-cards img {
