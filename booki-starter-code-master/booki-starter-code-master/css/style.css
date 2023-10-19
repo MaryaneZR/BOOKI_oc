@@ -1,5 +1,5 @@
 /****** General ***********/
-@media screen and (min-width: 1024px) and (max-width: 1300px){
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
     .main-container {
         min-width: 1010px;
         margin: 0px 20px;
@@ -39,7 +39,6 @@ body {
     padding: 4px 11px 7px 10px;
 }
 
-
 /******HEADER***********/
 
 .header {
@@ -47,7 +46,6 @@ body {
     width: 100%;
     justify-content: space-between;
     margin-bottom: 50px;
-    margin-top;
 }
 
 #logo_booki {
@@ -80,7 +78,7 @@ header button {
 }
 
 .fa-location-dot {
-color: #161717;
+    color: #161717;
 }
 
 /********INFO_GROUP *************/
@@ -121,7 +119,7 @@ color: #161717;
     background-color: #DEEBFF;
 }
 
-#responsive{
+#responsive {
     display: none;
 }
 
@@ -258,7 +256,7 @@ color: #161717;
 
 /****** Populaires ***********/
 
-.populaires{
+.populaires {
     background-color: var(--main-bg-color);
     border-radius: 15px;
     padding: 25px 30px 20px 25px;
